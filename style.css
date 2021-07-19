@@ -72,7 +72,7 @@ section {
 }
 
 ul img {
-  width: 55px;
+  width: 48px;
 }
 
 .input {
@@ -106,7 +106,7 @@ ul img {
 .input::placeholder {
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--primary-color);
+  color: #000;
 }
 
 .btns {
