@@ -213,6 +213,9 @@ table {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+  .bordered th:last-child {
+    text-align: center;
+  }
   .bordered th:first-child {
     text-align: center;
   }

@@ -1,113 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://www.google.com/s2/u/0/favicons?domain=neog.camp"
+    />
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cash Register Manager</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" type="image/x-icon"
-            href="https://www.google.com/s2/u/0/favicons?domain=neog.camp">
-    </head>
+  <body>
+    <header id="header">
+      <div id="logo">adarsh<span>balika</span></div>
+      <ul class="inline-list">
+        <li>
+          <a class="links" href="https://github.com/neogcamp/" target="_blank">
+            <img src="images/github.svg" alt="github" />
+          </a>
+        </li>
+        <li>
+          <a
+            class="links"
+            href="https://www.youtube.com/watch?v=Ezk2AwqgS9Q&list=PLzvhQUIpvvuj5KPnyPyWsvgyzNkX_ACPA"
+            target="_blank"
+          >
+            <img src="images/youtube.svg" alt="youtube" />
+          </a>
+        </li>
+        <li>
+          <a class="links" href="https://twitter.com/neogcamp" target="_blank">
+            <img src="images/twitter.svg" alt="twitter" />
+          </a>
+        </li>
+        <li>
+          <a
+            class="links"
+            href="https://www.instagram.com/neogcamp"
+            target="_blank"
+          >
+            <img src="images/instagram.svg" alt="instagram" />
+          </a>
+        </li>
+        <li>
+          <a
+            class="links"
+            href="https://www.linkedin.com/company/neog-camp/"
+            target="_blank"
+          >
+            <img src="images/linkedin.svg" alt="linkedin" />
+          </a>
+        </li>
+      </ul>
+    </header>
 
-    <body>
+    <main>
+      <section>
+        <div id="left-div">
+          <img src="images/hero.png" alt="hero-img" />
+        </div>
 
-        <header id="header">
-            <div id="logo">adarsh<span>balika</span></div>
-            <ul class="inline-list">
-                <li>
-                    <a class="links" href="https://github.com/neogcamp/" target="_blank">
-                        <img src="images/github.svg" alt="github">
-                    </a>
-                </li>
-                <li>
-                    <a class="links" href="https://www.youtube.com/watch?v=Ezk2AwqgS9Q&list=PLzvhQUIpvvuj5KPnyPyWsvgyzNkX_ACPA" target="_blank">
-                        <img src="images/youtube.svg" alt="youtube">
-                    </a>
-                </li>
-                <li>
-                    <a class="links" href="https://twitter.com/neogcamp" target="_blank">
-                        <img src="images/twitter.svg" alt="twitter">
-                    </a>
-                </li>
-                <li>
-                    <a class="links" href="https://www.instagram.com/neogcamp" target="_blank">
-                        <img src="images/instagram.svg" alt="instagram">
-                    </a>
-                </li>
-                <li>
-                    <a class="links"  href="https://www.linkedin.com/company/neog-camp/" target="_blank">
-                        <img src="images/linkedin.svg" alt="linkedin">
-                    </a>
-                </li>
-            </ul>
-        </header>
-
-        <main>
-            <section>
-                <div id="left-div">
-                    <img src="images/hero.png" alt="hero-img">
-                </div>
-
-                <div id="right-div">
-                    <h1>Cash Register</h1>
-                    <div>
-                        <input class="input" placeholder="Enter Bill amount"
-                            type="number" id="bill-amt">
-                        <button class="btns" id="btn-next">Next</button>
-                    </div>
-                    <div id="cash-div">
-                        <input class="input" placeholder="Enter Cash amount"
-                            type="number" id="cash">
-                        <button class="btns" id="btn-check">Check</button>
-                    </div>
-                    <div id="loading"><img src="images/loading.svg" alt="loading"></div>
-                    <div class="changeReturn">
-                        <div class="label">Return Change:</div>
-                        <div id="output">
-                            <table class="styled-table bordered">
-                                <thead>
-                                    <tr>
-                                        <th>No. of Notes</td>
-                                        <th>Note</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="active-row">
-                                        <td>2000</td>
-                                        <td class="noOfNotes"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>500</td>
-                                        <td class="noOfNotes"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>100</td>
-                                        <td class="noOfNotes"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>20</td>
-                                        <td class="noOfNotes"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>10</td>
-                                        <td class="noOfNotes"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td class="noOfNotes"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td class="noOfNotes"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <script src="main.js" type="text/javascript"></script>
-    </body>
+        <div id="right-div">
+          <h1>Cash Register</h1>
+          <div>
+            <input
+              class="input"
+              placeholder="Enter Bill amount"
+              type="number"
+              id="bill-amt"
+            />
+            <button class="btns" id="btn-next">Next</button>
+          </div>
+          <div id="cash-div">
+            <input
+              class="input"
+              placeholder="Enter Cash amount"
+              type="number"
+              id="cash"
+            />
+            <button class="btns" id="btn-check">Check</button>
+          </div>
+          <div id="loading"><img src="images/loading.svg" alt="loading" /></div>
+          <div class="changeReturn">
+            <div class="label">Return Change:</div>
+            <div id="output">
+              <table class="styled-table bordered">
+                <thead>
+                  <tr>
+                    <th>Note</th>
+                    <th>No. of Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="active-row">
+                    <td>2000</td>
+                    <td class="noOfNotes"></td>
+                  </tr>
+                  <tr>
+                    <td>500</td>
+                    <td class="noOfNotes"></td>
+                  </tr>
+                  <tr>
+                    <td>100</td>
+                    <td class="noOfNotes"></td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td class="noOfNotes"></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td class="noOfNotes"></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td class="noOfNotes"></td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td class="noOfNotes"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
 </html>
