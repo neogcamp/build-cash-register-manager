@@ -49,7 +49,7 @@ section {
 }
 
 #left-div {
-  padding: 2rem 0 0;
+  padding: 2rem 1rem 0;
   display: flex;
   margin: auto;
 }
@@ -81,12 +81,16 @@ ul img {
   padding: 0.6rem 2rem;
   margin: 0.6rem 1rem;
   border: 2px solid var(--primary-color);
-  color: var(--primary-color);
-  box-shadow: -1px 0px 19px 0 #dddddd;
+  box-shadow: 10px 10px 24px #f0f0f0, -10px -10px 24px #ffffff;
   border-radius: 1.5rem;
   font-size: 1.2rem;
   font-weight: 500;
+  outline: #fff;
+}
+
+.input:focus {
   outline: none;
+  box-shadow: 0 0 0px 2px #af91e1;
 }
 
 #cash-div {

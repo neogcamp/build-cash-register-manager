@@ -11,7 +11,11 @@ let notes = [2000, 500, 100, 20, 10, 5, 1];
 let returnNotes = [];
 
 btnNext.addEventListener("click", function () {
-  checkDiv.className = "show";
+  if (bill.value) {
+    checkDiv.className = "show";
+  } else {
+    alert("Enter bill amount");
+  }
 });
 
 btnCheck.addEventListener("click", function () {
@@ -20,6 +24,8 @@ btnCheck.addEventListener("click", function () {
   for (const notes of noOfNotes) {
     notes.innerText = "";
   }
+
+  console.log({ billAmt, cashAmt });
 
   if (billAmt === "") {
     alert("Please, Enter Billing Amount!");
@@ -31,9 +37,10 @@ btnCheck.addEventListener("click", function () {
     alert("No Change!");
   } else {
     loader.className = "show";
+    returnChange.className = "changeReturn";
     setTimeout(function () {
       loader.className = loader.className.replace("show", "");
-      returnChange.className = output.className.replace("", "show");
+      returnChange.className = output.className.replace("changeReturn", "show");
     }, 2000);
     let returnAmount = parseInt(cashAmt) - parseInt(billAmt);
 
