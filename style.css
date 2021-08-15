@@ -64,6 +64,12 @@ body {
   display: block;
 }
 
+#error-message {
+  display: block;
+  font-size: larger;
+  margin: 1rem 0 0;
+}
+
 /* Table */
 .change-table {
   width: 50%;
