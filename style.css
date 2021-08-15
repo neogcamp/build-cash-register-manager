@@ -19,217 +19,95 @@ body {
   min-width: 100vw;
 }
 
-/*  header */
-
-#header {
-  display: flex;
-  padding: 1rem 2rem;
-  justify-content: space-around;
+/* Container */
+.container {
+  margin: 4rem auto 8rem;
+  text-align: center;
 }
 
-.inline-list li {
-  display: inline;
-  margin: 0 1rem;
-}
-
-#logo {
-  font-size: xx-large;
-  font-weight: 600;
-}
-
-#logo span {
+.heading {
   color: var(--primary-color);
 }
 
-/* main */
-
-section {
-  display: flex;
-  max-width: 90%;
-}
-
-#left-div {
-  padding: 2rem 1rem 0;
-  display: flex;
-  margin: auto;
-}
-
-#left-div img {
-  max-width: 825px;
-  width: 100%;
-}
-
-#right-div {
-  padding: 0 2rem;
-}
-
-#right-div h1 {
-  margin-left: 1rem;
-  font-size: xxx-large;
-}
-
-#right-div p {
+.description {
   font-size: larger;
-  font-weight: 600;
+  margin: 1rem;
 }
 
-ul img {
-  width: 48px;
+.input-label {
+  display: block;
+  font-size: large;
+  font-weight: 600;
 }
 
 .input {
-  padding: 0.6rem 2rem;
-  margin: 0.6rem 1rem;
-  border: 2px solid var(--primary-color);
-  box-shadow: 10px 10px 24px #f0f0f0, -10px -10px 24px #ffffff;
-  border-radius: 1.5rem;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 14px;
   outline: #fff;
+  padding: 0.6rem 1rem;
+  margin: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 258px;
 }
 
-.input:focus {
-  outline: none;
-  box-shadow: 0 0 0px 2px #af91e1;
-}
-
-#cash-div {
-  visibility: hidden;
-}
-
-#cash-div.show {
-  visibility: visible;
-}
-
-.changeReturn {
-  visibility: hidden;
-}
-
-.changeReturn.show {
-  visibility: visible;
-}
-
-.input::placeholder {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #000;
-}
-
-.btns {
-  padding: 0.6rem 2rem;
-  margin: 0.8rem 1rem;
+#check-button {
   background: var(--primary-color);
   border: none;
   color: #fff;
-  outline: none;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-size: large;
   cursor: pointer;
-  box-shadow: 3px 4px 7px #dddddd, -6px -4px 10px 0px #ddddddbd;
-  border-radius: 1.5rem;
-  font-size: 1.2rem;
-  font-weight: 500;
+  outline: #fff;
+  margin: auto;
+  display: block;
 }
 
-.label {
+/* Table */
+.change-table {
+  width: 50%;
+  text-align: justify;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.change-table caption {
+  margin: 1rem auto;
   font-size: x-large;
   font-weight: 500;
-  margin-left: 1rem;
 }
 
-/*  Table */
+th,
+td {
+  border: 2px solid var(--primary-color);
+  width: 0%;
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
 
-.styled-table {
+/* footer */
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: large;
+  text-align: center;
+}
+
+.footer-list {
   margin: 1rem;
-  font-size: larger;
-  border-radius: 2rem;
-  font-weight: 500;
-  border: 1px solid #cccccc;
-  min-width: 350px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.styled-table thead tr {
-  background-color: var(--primary-color);
-  color: #ffffff;
-  text-align: left;
+a,
+img,
+li {
+  display: inline;
 }
 
-.styled-table th,
-.styled-table td {
-  padding: 10px 20px;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-  color: var(--primary-color);
-  font-weight: 500;
-}
-
-table {
-  border-spacing: 0;
-  width: 500px;
-  margin: 30px;
-}
-
-.bordered th:first-child {
-  border-radius: 1rem 0 0 0;
-}
-
-.bordered th:last-child {
-  border-radius: 0 1rem 0 0;
-}
-
-/*  Loader */
-
-#loading {
-  visibility: hidden;
-  height: 0;
-}
-
-#loading.show {
-  visibility: visible;
-}
-
-@media screen and (max-width: 900px) {
-  section {
-    flex-direction: column;
-    max-width: 100%;
-  }
-  #header {
-    display: block;
-    text-align: center;
-  }
-  #left-div img {
-    max-width: 355px;
-  }
-  table {
-    width: auto;
-  }
-  #right-div {
-    padding: 0;
-    text-align: center;
-  }
-
-  #right-div h1 {
-    margin-left: 0rem;
-  }
-  .styled-table {
-    margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  .bordered th:last-child {
-    text-align: center;
-  }
-  .bordered th:first-child {
-    text-align: center;
-  }
-  #logo {
-    margin-bottom: 1rem;
-  }
-  .inline-list li {
-    margin: 0 0.3rem;
-  }
-  ul img {
-    width: 40px;
-  }
+img {
+  width: 40px;
+  padding: 0.2rem;
 }
